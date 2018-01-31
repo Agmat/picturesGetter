@@ -4,7 +4,7 @@ let download = require('download-file')
 
 const main = () => {
     if (process.argv.length != 4) {
-        console.log('Usage: node index.js [URL] [Destination]')
+        console.log('Usage: node index.js [URL] [FOLDER]')
         return (1);
     }
     request(process.argv[2], (error, response, body) => {
